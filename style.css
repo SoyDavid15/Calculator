@@ -1,0 +1,30 @@
+body{
+    background: linear-gradient(to right, #c300ff, #4400ff);
+    /* Le damos al body el 100% de la altura de la ventana */
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 90vh;
+    gap: 10%;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    background-color: rgb(89, 0, 255);
+    width: 10%;
+    height: 10%;
+    border-radius: 10px;
+    border:solid, black, 0.5px;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background-color: rgb(62, 0, 179);
+    cursor: pointer;
+}

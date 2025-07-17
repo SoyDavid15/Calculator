@@ -1,0 +1,96 @@
+@keyframes MiAnimacion {
+  0%{
+    position: relative;
+    transform: translate(0px, 400px);
+  }
+  100%{
+    position: initial;
+  }  
+}
+
+body{
+  background:linear-gradient(to right, rgb(204, 1, 255), rgb(47, 0, 255));
+  overflow: hidden;
+}
+
+.App{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+
+}
+
+.Calcular{
+  display: flex;
+  margin: auto;
+  background: none;
+  border: solid 0.1px;
+  border-radius: 5px;
+  width: 50%;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  transition: backgroun, 0.2s ease-in-out;
+}
+
+.Calcular:hover{
+  background: white;
+  cursor: pointer;;
+}
+
+.CuerpoCalculadora{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: solid 5px white;
+  border-radius: 20px;
+  width: 30vw;
+  min-width: 44vh;
+  height: 90vh;
+  animation: MiAnimacion 1s ease-in-out forwards;
+  gap: 20%;
+}
+
+.Pantalla{
+  border: solid 5px white;
+  border-radius: 10px;
+  width: 90%;
+  height: 10%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+  color: white;
+  font-size: 30px;
+}
+
+.SeccionNumeros{
+  display: flex;
+  box-sizing: border-box;
+  
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+  gap: 30px;
+}
+.Numeros{
+  width: 100%;
+  height: 200%;
+  background: none;
+  border: solid 2px white;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  font-family: fantasy;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.Numeros:hover{
+  background-color: white;
+}
